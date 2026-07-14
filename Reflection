@@ -1,0 +1,7 @@
+# Assignment 2 Reflection
+
+The manual version followed the instructor’s guide closely and used simpler, more direct code. It used sys.argv in Python and commandArgs() in R, while the AI version added more input checks, functions, error messages, and an extra RMSE calculation. The AI version was more detailed, but the manual version was easier for me to read. I also think another scientist could understand the manual version faster because the steps were shorter and followed the assignment structure clearly.
+
+The AI version introduced a few problems during testing. For example, the exported Python script included display(data.head()), which worked inside Jupyter but caused a NameError when I ran the script from the terminal. I had to replace it with print(data.head()). I also needed to make sure the correct packages were installed and that the scripts were running from the correct folder. The AI did not skip the main regression steps, but it sometimes added more code than the assignment required.
+
+After fixing these issues, both AI command-line scripts worked normally. They accepted the filename, x-column, and y-column in the expected order and generated the required PNG images. This showed me that AI can create useful code quickly, but the results still need to be tested and adjusted before submission.
