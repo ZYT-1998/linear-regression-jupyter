@@ -1,0 +1,4 @@
+I need an AI-generated version of the linear regression assignment. Please create the Python and R notebook code and make sure both versions include a scatter plot, regression line, and model evaluation.
+Please review my instructor’s Part II guide and create Python and R command-line scripts that accept the filename, x-column, and y-column and save the plots as PNG files.
+My Python script gives the error “display is not defined” when I run it from the terminal. Please fix the script so it works correctly outside Jupyter Notebook.
+My Python and R scripts have generated the output images. Please help me check which files need to be included in the ai folder and uploaded to GitHub.
