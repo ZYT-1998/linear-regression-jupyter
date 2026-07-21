@@ -29,7 +29,23 @@ def main():
         sys.exit(1)
 
     # Keep only the selected columns and remove missing values
-    analysis_data = dataset[[x_column, y_column]].dropna()
+    analysis_data = dataset[[x_column, y_column]].copy()
+
+analysis_data[x_column] = pd.to_numeric(
+    analysis_data[x_column],
+    errors="coerce"
+)
+analysis_data[y_column] = pd.to_numeric(
+    analysis_data[y_column],
+    errors="coerce"
+)
+
+analysis_data = analysis_data.dropna()
+
+if len(analysis_data) < 2:
+    raise ValueError(
+        "At least two complete numeric observations are required."
+    )
 
     x = analysis_data[x_column].to_numpy()
     y = analysis_data[y_column].to_numpy()

@@ -37,7 +37,13 @@ df <- data.frame(
   y = dataset[[y_column]]
 )
 
+df$x <- suppressWarnings(as.numeric(df$x))
+df$y <- suppressWarnings(as.numeric(df$y))
 df <- na.omit(df)
+
+if (nrow(df) < 2) {
+  stop("At least two complete numeric observations are required.")
+}
 
 # Fit the linear regression model
 model <- lm(y ~ x, data = df)
