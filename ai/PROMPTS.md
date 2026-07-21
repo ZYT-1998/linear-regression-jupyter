@@ -1,4 +1,17 @@
-I need an AI-generated version of the linear regression assignment. Please create the Python and R notebook code and make sure both versions include a scatter plot, regression line, and model evaluation.
-Please review my instructor’s Part II guide and create Python and R command-line scripts that accept the filename, x-column, and y-column and save the plots as PNG files.
-My Python script gives the error “display is not defined” when I run it from the terminal. Please fix the script so it works correctly outside Jupyter Notebook.
-My Python and R scripts have generated the output images. Please help me check which files need to be included in the ai folder and uploaded to GitHub.
+# AI Prompts Used
+
+## Code Generation Prompt
+
+Create improved Python and R linear regression scripts and Jupyter notebooks using the same salary and years-of-experience dataset. The analysis must calculate the slope, intercept, Pearson correlation coefficient, and Mean Squared Error. The regression plots must display the fitted equation, correlation coefficient, and MSE. The standalone scripts must accept the filename, predictor column, and response column as command-line arguments.
+
+## Commit Message Prompt
+
+Write a concise Git commit message describing the addition of AI-assisted Python and R regression notebooks, scripts, plots, and documentation.
+
+## Code Review Prompt
+
+Review the pull request diff for the Assignment 3 linear regression project. Check the Python and R scripts and notebooks for correctness, input validation, reproducibility, consistency between languages, plot annotations, filenames, and compliance with the assignment requirements. Identify at least one substantive issue and explain how it should be fixed.
+
+## README Prompt
+
+Create a concise README for the AI-assisted linear regression analysis. Explain the project purpose, required files, environment setup, command-line usage for Python and R, expected output files, and the statistics calculated by the analysis.
